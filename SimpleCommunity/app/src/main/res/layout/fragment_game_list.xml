@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.CommunityFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="랭 킹"
+                android:textSize="30dp"
+                android:gravity="center"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_ranking"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                tools:listitem="@layout/item_ranking"
+                android:layout_weight="10"
+                />
+
+            <Button
+                android:id="@+id/GameStartBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="게임시작"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_border"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+</FrameLayout>
