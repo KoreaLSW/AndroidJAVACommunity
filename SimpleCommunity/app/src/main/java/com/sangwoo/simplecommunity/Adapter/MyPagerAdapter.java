@@ -39,7 +39,7 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if(position == 0) {
-            return "모두의 게시판";
+            return "모두의 게시판.";
         }else if(position == 1){
             return "심심풀이";
         }else {
